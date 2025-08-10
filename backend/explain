@@ -1,0 +1,22 @@
+#!/home/subaina/terminal-assistant/venv/bin/python
+import argparse
+from ai_prompt import explain_command
+
+def main():
+    print(" Welcome to the Terminal Assistant CLI!")
+
+    parser = argparse.ArgumentParser(description="Explain terminal commands")
+    parser.add_argument("command", nargs="+", help="Command to explain (e.g. 'git push')")
+    args = parser.parse_args()
+
+    print(" Explaining command...")
+    cmmd_str = " ".join(args.command)
+    explanation = explain_command(cmmd_str)
+    print("\n Explanation:\n")
+    print(explanation)
+
+    print()
+
+
+if __name__ == "__main__":
+    main()
