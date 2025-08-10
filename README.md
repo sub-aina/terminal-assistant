@@ -74,8 +74,6 @@ honestly? too many issues:
 
 **too slow** — even local AI takes like 1-2 seconds. terminal users expect instant feedback. waiting for completions while typing feels broken.
 
-**accuracy sucked** — AI would suggest weird completions that made no sense. like suggesting `git push --force` when you typed `git s`. not helpful.
-
 **overcomplicated** — bash scripting + fastapi + ollama + vscode extension (that never worked) + caching... too many moving parts for something that should feel simple.
 
 **resource hungry** — mistral eating CPU constantly just to suggest `ls -la` seemed overkill.
